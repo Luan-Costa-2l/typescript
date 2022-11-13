@@ -4,8 +4,6 @@ let user: 'Luan' = 'Luan';
 user = 'Luan';
 user = 'pedro'; // ERROR
 
-
-
 // Aqui está um exemplo da utilidade do type literal
 function showText(
     text: string,
@@ -18,14 +16,12 @@ showText('Luan', 'left');
 showText('Luan', 'right');
 showText('Luan', 'blablabla'); // ERROR
 
-
 // Mais um exemplo de uso. PS: nesse caso o type boolean resolvia
 type TorF = true | false;
 
 function hasName(name: string): TorF {
     return (name !== '') ? true : false;
 }
-
 
 function config(props: {width: number, height: number} | 'auto') {
 
